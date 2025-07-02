@@ -77,11 +77,6 @@ You can also find attached other files added to this repository
 
 ### Notes
 
-This analysis is based on a case study provided by Incubator Hub and aims to demonstrate practical business intelligence skills using real-world data.
+This analysis is based on a case study provided by Incubator Hub and aims to demonstrate practical data analysis skills using real-world data.
 
-Dashboard Preview
-![Dashboard Screenshot](https://github.com/Analyze-with-Bukola/Kultra-Mega-Stores-Inventory-Analysis/blob/main/dashboard%20screenshot.png))
 
-### Notes
-
-This analysis is based on a case study provided by Incubator Hub and aims to demonstrate practical business intelligence skills using real-world data.
