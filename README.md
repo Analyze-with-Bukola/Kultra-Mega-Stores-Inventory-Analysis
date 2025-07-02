@@ -72,14 +72,10 @@ The dataset consists of order data from 2009 to 2012, including:
 
 Each file is named according to its case scenario and question number for clarity.
 
----
-
 Dashboard Preview
+![Dashboard Screenshot](https://github.com/YOUR_USERNAME/Kultra-Mega-Stores-Inventory-Analysis/raw/main/dashboard_preview.png)
 
-Below is a snapshot of the Excel dashboard used to summarize insights:
 
-![Dashboard Screenshot]([dashboard_preview.png](https://github.com/Analyze-with-Bukola/Kultra-Mega-Stores-Inventory-Analysis/blob/main/dashboard%20screenshot.png))
-
-## Notes
+### Notes
 
 This analysis is based on a case study provided by Incubator Hub and aims to demonstrate practical business intelligence skills using real-world data.
