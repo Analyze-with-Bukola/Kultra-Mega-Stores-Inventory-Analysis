@@ -4,7 +4,7 @@
 
 Kultra Mega Stores (KMS), headquartered in Lagos, Nigeria, specializes in office supplies and furniture. Its customers include individual consumers, small businesses (retail), and large corporate clients (wholesale) across Lagos.
 
-As a Business Intelligence Analyst supporting the Abuja division of KMS, I analyzed order data from 2009 to 2012 to provide key insights that guide business decisions and improve performance.
+According to the project, I assumed the role of a Business Intelligence Analyst supporting the Abuja division of KMS. I analyzed order data from 2009 to 2012 to provide key insights that guide business decisions and improve performance.
 
 ---
 
@@ -66,8 +66,18 @@ The dataset consists of order data from 2009 to 2012, including:
 - SQL scripts used for data extraction and analysis  
 - Key insights and recommendations for KMS management
 
- All query scripts used to answer the case questions are saved in the [`KMS queries.txt`](https://github.com/Analyze-with-Bukola/Kultra-Mega-Stores-Inventory-Analysis/blob/main/KMS%20queries.txt).
- folder.
+ All query scripts used to answer the case questions are saved in the [`KMS queries.txt`](YOUR_URL_HERE).
+
+Dashboard Preview: 
+
+[Dashboard Screenshot](https://github.com/Analyze-with-Bukola/Kultra-Mega-Stores-Inventory-Analysis/blob/main/dashboard%20screenshot.png)
+
+You can also find attached other files added to this repository
+
+
+### Notes
+
+This analysis is based on a case study provided by Incubator Hub and aims to demonstrate practical business intelligence skills using real-world data.
 
 Dashboard Preview
 ![Dashboard Screenshot](https://github.com/Analyze-with-Bukola/Kultra-Mega-Stores-Inventory-Analysis/blob/main/dashboard%20screenshot.png))
