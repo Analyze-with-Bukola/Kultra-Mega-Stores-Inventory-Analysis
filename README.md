@@ -68,7 +68,7 @@ The dataset consists of order data from 2009 to 2012, including:
 
 ---
 
-## 🧾 All query scripts used to answer the case questions are saved in the [`sql_queries`](./sql_queries) folder.
+## 🧾 All query scripts used to answer the case questions are saved in the [`sql_queries`]([./sql_queries](https://github.com/Analyze-with-Bukola/Kultra-Mega-Stores-Inventory-Analysis/blob/main/KMS%20queries.txt)) folder.
 
 Each file is named according to its case scenario and question number for clarity.
 
