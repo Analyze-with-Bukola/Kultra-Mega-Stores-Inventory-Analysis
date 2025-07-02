@@ -1,0 +1,125 @@
+----SCENARIO ONE---
+Select * from [dbo].[kmstable]
+
+QI
+
+SELECT TOP 3
+    Product_Category, 
+    SUM(Sales) AS Total_Sales
+FROM kmstable
+GROUP BY Product_Category
+ORDER BY Total_Sales DESC;
+
+Q2
+
+Select top 3 * from (select Row_ID, Sales, Region from kmstable) as kms
+Order by Sales desc;
+
+Select top 3 * from (select Row_ID, Sales, Region from kmstable) as kms
+Order by Sales asc;
+
+Q3
+
+Select Province, Product_Category, sum (Sales) as Total_Sales
+from kmstable
+group by Province, Product_Category
+Order by Province, Total_Sales;
+
+Select Province, Product_Category, sum (Sales) as Total_Sales
+from kmstable
+where province = 'Ontario'
+group by Province, Product_Category
+Order by Province, Total_Sales;
+
+Q4
+
+select top 10 Customer_Name, Sum (Sales) as Revenue
+from kmstable
+Group by Customer_Name
+Order by Customer_Name asc;
+
+Q5
+
+Select Ship_Mode, sum (Shipping_Cost) as Total_Cost
+from kmstable
+group by Ship_Mode
+
+---SCENARIO TWO----
+
+Q6
+
+Select Customer_Name, Product_Category, Sum (Sales) as Total_Spent
+from kmstable
+group by Customer_Name,Product_Category
+Order by Total_Spent desc;
+
+SELECT Customer_Name, Product_Category, SUM (Sales) AS Total_Spent
+FROM kmstable
+WHERE Customer_Name in (
+    SELECT TOP 5 Customer_Name
+    FROM kmstable
+    GROUP BY Customer_Name
+    ORDER BY Sum(Sales) DESC
+)
+GROUP BY Customer_Name, Product_Category
+ORDER BY Customer_Name, Total_Spent DESC;
+
+Q7
+
+select * from kmstable
+
+Select Top 3 Customer_Name, Customer_Segment, Sum (Sales) as Total_Sales
+from kmstable
+Where Customer_Segment = 'Small business'
+Group by Customer_Name, Customer_Segment
+Order by Total_Sales desc
+
+Q8
+
+Select  Top 5 Customer_Name, Customer_Segment, Order_Date, Sum (Order_Quantity) as Total_Order
+from kmstable
+Where Customer_Segment = 'Corporate'
+And Year (Order_Date) between 2009 and 2012
+Group by Customer_Name, Customer_Segment, Order_Date
+Order by Total_Order desc;
+
+Q9
+
+Select Top 5 Customer_Name, Sum (Profit) as Total_Profit
+from kmstable
+Where Customer_Segment = 'Consumer'
+Group by Customer_Name
+Order by Total_Profit desc;
+
+Q10
+
+Select * from kmstable
+Select * from Order_Status
+
+
+SELECT DISTINCT
+    k.Order_ID, 
+    k.Customer_Name,
+    k.Customer_Segment,
+    os.Status
+FROM kmstable k
+JOIN Order_status os ON k.Order_ID = os.Order_ID;
+
+Q11
+
+Select Order_Priority, Ship_Mode, Sum (Order_Quantity) as Num_Orders,
+Avg (Shipping_Cost) as Avg_Shipping_Cost
+from kmstable
+group by Order_Priority, Ship_Mode
+Order by Order_Priority, Ship_Mode desc;
+
+
+
+
+
+
+
+
+
+
+
