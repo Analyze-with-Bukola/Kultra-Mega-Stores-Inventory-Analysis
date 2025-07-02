@@ -68,6 +68,19 @@ The dataset consists of order data from 2009 to 2012, including:
 
 ---
 
+## 🧾 All query scripts used to answer the case questions are saved in the [`sql_queries`](./sql_queries) folder.
+
+Each file is named according to its case scenario and question number for clarity.
+
+---
+
+## 📸 Dashboard Preview
+
+Below is a snapshot of the Excel dashboard used to summarize insights:
+
+![Dashboard Screenshot](dashboard_preview.png)
+
+
 ## Notes
 
 This analysis is based on a case study provided by Incubator Hub and aims to demonstrate practical business intelligence skills using real-world data.
