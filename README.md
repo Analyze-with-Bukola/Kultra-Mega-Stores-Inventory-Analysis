@@ -78,8 +78,7 @@ Dashboard Preview
 
 Below is a snapshot of the Excel dashboard used to summarize insights:
 
-![Dashboard Screenshot](dashboard_preview.png)
-
+![Dashboard Screenshot]([dashboard_preview.png](https://github.com/Analyze-with-Bukola/Kultra-Mega-Stores-Inventory-Analysis/blob/main/dashboard%20screenshot.png))
 
 ## Notes
 
