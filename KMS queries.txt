@@ -1,8 +1,7 @@
 ----SCENARIO ONE---
 Select * from [dbo].[kmstable]
 
-QI
-
+QI: Which product category had the highest sales?
 SELECT TOP 3
     Product_Category, 
     SUM(Sales) AS Total_Sales
@@ -10,16 +9,14 @@ FROM kmstable
 GROUP BY Product_Category
 ORDER BY Total_Sales DESC;
 
-Q2
-
+Q2: What are the Top 3 and Bottom 3 regions in terms of sales?
 Select top 3 * from (select Row_ID, Sales, Region from kmstable) as kms
 Order by Sales desc;
 
 Select top 3 * from (select Row_ID, Sales, Region from kmstable) as kms
 Order by Sales asc;
 
-Q3
-
+Q3: What were the total sales of appliances in Ontario?
 Select Province, Product_Category, sum (Sales) as Total_Sales
 from kmstable
 group by Province, Product_Category
@@ -31,23 +28,20 @@ where province = 'Ontario'
 group by Province, Product_Category
 Order by Province, Total_Sales;
 
-Q4
-
+Q4: Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers
 select top 10 Customer_Name, Sum (Sales) as Revenue
 from kmstable
 Group by Customer_Name
 Order by Customer_Name asc;
 
-Q5
-
+Q5: KMS incurred the most shipping cost using which shipping method?
 Select Ship_Mode, sum (Shipping_Cost) as Total_Cost
 from kmstable
 group by Ship_Mode
 
 ---SCENARIO TWO----
 
-Q6
-
+Q6: Who are the most valuable customers, and what products or services do they typically purchase?
 Select Customer_Name, Product_Category, Sum (Sales) as Total_Spent
 from kmstable
 group by Customer_Name,Product_Category
@@ -64,8 +58,7 @@ WHERE Customer_Name in (
 GROUP BY Customer_Name, Product_Category
 ORDER BY Customer_Name, Total_Spent DESC;
 
-Q7
-
+Q7: Which small business customer had the highest sales?
 select * from kmstable
 
 Select Top 3 Customer_Name, Customer_Segment, Sum (Sales) as Total_Sales
@@ -74,8 +67,7 @@ Where Customer_Segment = 'Small business'
 Group by Customer_Name, Customer_Segment
 Order by Total_Sales desc
 
-Q8
-
+Q8: Which Corporate Customer placed the most number of orders in 2009 – 2012?
 Select  Top 5 Customer_Name, Customer_Segment, Order_Date, Sum (Order_Quantity) as Total_Order
 from kmstable
 Where Customer_Segment = 'Corporate'
@@ -83,16 +75,14 @@ And Year (Order_Date) between 2009 and 2012
 Group by Customer_Name, Customer_Segment, Order_Date
 Order by Total_Order desc;
 
-Q9
-
+Q9: Which consumer customer was the most profi table one?
 Select Top 5 Customer_Name, Sum (Profit) as Total_Profit
 from kmstable
 Where Customer_Segment = 'Consumer'
 Group by Customer_Name
 Order by Total_Profit desc;
 
-Q10
-
+Q10: Which customer returned items, and what segment do they belong to?
 Select * from kmstable
 Select * from Order_Status
 
@@ -105,8 +95,7 @@ SELECT DISTINCT
 FROM kmstable k
 JOIN Order_status os ON k.Order_ID = os.Order_ID;
 
-Q11
-
+Q11: If the delivery truck is the most economical but the slowest shipping method and Express Air is the fastest but the most expensive one, do you think the company appropriately spent shipping costs based on the Order Priority?
 Select Order_Priority, Ship_Mode, Sum (Order_Quantity) as Num_Orders,
 Avg (Shipping_Cost) as Avg_Shipping_Cost
 from kmstable
