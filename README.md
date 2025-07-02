@@ -66,15 +66,11 @@ The dataset consists of order data from 2009 to 2012, including:
 - SQL scripts used for data extraction and analysis  
 - Key insights and recommendations for KMS management
 
----
-
- All query scripts used to answer the case questions are saved in the [`sql_queries`]([./sql_queries](https://github.com/Analyze-with-Bukola/Kultra-Mega-Stores-Inventory-Analysis/blob/main/KMS%20queries.txt)) folder.
-
-Each file is named according to its case scenario and question number for clarity.
+ All query scripts used to answer the case questions are saved in the [`KMS queries.txt`](YOUR_URL_HERE).
+ folder.
 
 Dashboard Preview
-![Dashboard Screenshot](https://github.com/YOUR_USERNAME/Kultra-Mega-Stores-Inventory-Analysis/raw/main/dashboard_preview.png)
-
+![Dashboard Screenshot]([https://github.com/YOUR_USERNAME/Kultra-Mega-Stores-Inventory-Analysis/raw/main/dashboard_preview.png](https://github.com/Analyze-with-Bukola/Kultra-Mega-Stores-Inventory-Analysis/blob/main/dashboard%20screenshot.png))
 
 ### Notes
 
